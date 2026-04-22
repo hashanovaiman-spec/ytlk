@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTalk</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <img src="img/header/logo.svg" alt="YouTalk Logo">
+                </div>
+                <div class="header_navbar">
+                    <a href="#">О нас</a>
+                    <a href="#">Тарифы</a>
+                    <a href="#">Для бизнеса</a>
+                    <a href="#">Психологам</a>
+                    <a href="#">Сертификат</a>
+
+                    <div class="header_navbar_activebtn">
+                        <a href="#">Материалы</a>
+                        <a href="#" class="arrow_btn">
+                            <img src="img/header/arrowbtn.svg" alt="arrow_down_button"
+                                style="width: 14px; height: 14px">
+                        </a>
+                    </div>
+
+                    <a href="#">FAQ</a>
+
+                </div>
+
+                <div>
+                    <button class="header_btn">Подобрать психолога</button>
+                </div>
+
+                <!-- <div class="header_navbar_burger">
+                    <a href="#" class="burger_btn">
+                        <img src="img/header/burgerbtn.png" alt="burger_button">
+                    </a>
+                </div> -->
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- maim -->
+    <main>
+        <div class="container">
+            <div class="main_inner">
+                <div class="main_path">
+                    <a href="#">Главная</a>
+                    <div> <img src="img/main/arrow_right.svg" alt="arrow_right_button"></div>
+                    <a href="index.html">Блог</a>
+                </div>
+
+                <div class="main_title">
+                    <h1>Блог</h1>
+                </div>
+
+                <div class="main_topics">
+                    <button class="main_topics_button">&#128522; Все</button>
+                    <button class="main_topics_button">Самооценка и самопринятие</button>
+                    <button class="main_topics_button">&#129412; Self</button>
+                    <button class="main_topics_button">Чувства и эмоции</button>
+                    <button class="main_topics_button">Тревога</button>
+                    <button class="main_topics_button">Упражнения</button>
+                    <button class="main_topics_button">Психология питания</button>
+                    <button class="main_topics_button">Насилие</button>
+                    <button class="main_topics_button">Личное здоровье</button>
+                </div>
+
+                <div class="main_articles">
+                    <div class="main_bg"></div>
+
+                    <div class="main_cards_grid-container">
+                    <article class="card card--featured">
+            <a class="card__image" href="#">
+              <img src="img/main/blog-1-1.png" alt="Яйца с нарисованными эмоциями в коробке">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Самооценка и самопринятие</a>
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Эмоциональное выгорание — стадии и симптомы, методы восстановления и профилактики</a></h2>
+              <p class="card_author">Автор: Лиза Файнтух</p>
+              <p class="card_text">Изначально термин «эмоциональное выгорание» использовался в профессиональной сфере и относился...</p>
+            </div>
+            <time class="card_date" datetime="2021-08-21">21.08.2021</time>
+          </article>
+
+          <article class="card card--featured">
+            <a class="card__image-link" href="#" aria-label="Открыть статью про бег и тревогу">
+              <img class="card__image" src="img/main/blog-1-2.png" alt="Человек бежит по дорожке в парке">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Как не утонуть в тревоге и управлять своими страхами</a></h2>
+              <p class="card_author">Автор: Екатерина Бельтюкова</p>
+              <p class="card_text">Один из самых важных навыков, которые может дать работа с психотерапевтом, — умение в разных ситуациях по-разному обходиться...</p>
+            </div>
+            <time class="card_date" datetime="2021-08-11">11.08.2021</time>
+          </article>
+
+          <article class="card">
+            <a class="card_image-link" href="#" aria-label="Открыть статью про усталость и выгорание">
+              <img class="card_image" src="img/main/blog-2-1.png" alt="Девушка лежит, уткнувшись лицом в кровать и выглядит уставшей">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Самооценка и самопринятие</a>
+              <a class="card_tag" href="#">&#129412; Психология питания</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Эмоциональное выгорание — стадии и симптомы, методы восстановления и профилактики</a></h2>
+              <p class="card_author">Автор: Лиза Файнтух</p>
+              <p class="card_text">Изначально термин «эмоциональное выгорание» использовался в профессиональной сфере и относился...</p>
+            </div>
+            <time class="card_date" datetime="2021-08-21">21.08.2021</time>
+          </article>
+
+          <article class="card">
+            <a class="card_image-link" href="#" aria-label="Открыть статью про упражнения на эмоции">
+              <img class="card_image" src="img/main/blog-2-2.png" alt="Женщина расслабленно лежит на воде">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Как не утонуть в тревоге и управлять своими страхами</a></h2>
+              <p class="card_author">Автор: Екатерина Бельтюкова</p>
+              <p class="card_text">Один из самых важных навыков, которые может дать работа с психотерапевтом, — умение в разных ситуациях по-разному обходиться...
+            </div>
+            <time class="card_date" datetime="2021-08-11">11.08.2021</time>
+          </article>
+
+          <article class="card">
+            <a class="card_image-link" href="#" aria-label="Открыть статью про агрессию">
+              <img class="card_image" src="img/main/blog-2-3.png" alt="Человек держит лист бумаги с сердитым лицом на фоне кирпичной стены">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Как управлять своими эмоциями: 8 шагов</a></h2>
+              <p class="card_author">Автор: Марина Ляшенко</p>
+              <p class="card_text">Несколько практических рекомендаций, которые помогают замечать эмоции раньше, чем они начинают управлять поведением...</p>
+            </div>
+            <time class="card_date" datetime="2021-08-07">07.08.2021</time>
+          </article>
+
+          <article class="card">
+            <a class="card_image-link" href="#" aria-label="Открыть статью про возраст и отношения">
+              <img class="card_image" src="img/main/blog-3-1.png" alt="Женщина улыбается, работая за ноутбуком">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Эмоциональное выгорание — стадии и симптомы, методы восстановления и профилактики</a></h2>
+              <p class="card_author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+              <p class="card_text">Изначально термин «эмоциональное я...</p>
+            </div>
+            <time class="card_date" datetime="2021-08-21">21.08.2021</time>
+          </article>
+
+          <article class="card">
+            <a class="card_image-link" href="#" aria-label="Открыть статью про общение онлайн">
+              <img class="card_image" src="img/main/blog-3-2.png" alt="Девушка общается по видеосвязи, лёжа на кровати">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Как не утонуть в тревоге и управлять своими страхами</a></h2>
+              <p class="card_author">Автор: Екатерина Бельтюкова</p>
+              <p class="card_text">Один из самых важных навыков, которые может дать работа с психотерапевтом, — умение в разных ситуациях по-разному обходиться...</p>
+            </div>
+            <time class="card_date" datetime="2021-08-11">11.08.2021</time>
+          </article>
+
+          <article class="card">
+            <a class="card_image-link" href="#" aria-label="Открыть статью про личные границы">
+              <img class="card_image" src="img/main/blog-3-3.png" alt="Люди идут по светлому круглому холлу, вид сверху">
+            </a>
+            <div class="card_tags">
+              <a class="card_tag" href="#">&#129412; Self</a>
+            </div>
+            <div class="card_body">
+              <h2 class="card_title"><a href="#">Как управлять своими эмоциями: 8 шагов</a></h2>
+              <p class="card_author">Автор: Марина Ляшенко</p>
+              <p class="card_text">Несколько практических рекомендаций, которые помогают замечать эмоции раньше, чем они начинают управлять поведением...
+            </div>
+            <time class="card_date" datetime="2021-08-07">07.08.2021</time>
+          </article>
+        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

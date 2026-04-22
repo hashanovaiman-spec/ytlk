@@ -1,0 +1,256 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px 120px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    border-bottom: 1px solid #EFF5FB;
+}
+.header_inner {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_logo {
+   
+    margin-right: 51px;
+}
+.header_navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    line-height: 15px;
+    margin-right: 164px;
+    white-space: nowrap;
+}
+
+.header_navbar a {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333333;
+  line-height: 114%;
+  letter-spacing: 0.25px;
+}
+.header_navbar_activebtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.arrow_btn {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+}
+.header_btn {
+  padding: 14px 20px;
+  background-color: #E3F5F5;
+  color: #03B2A5;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.header_btn:hover {
+  background-color: #03B2A5;
+  color: #E3F5F5;
+}
+
+/* Main */
+
+.main_path 
+ {  display: flex;
+    flex: 1;
+    gap: 8px;
+    justify-content: start;
+    text-align: center;
+    margin-bottom: 30px;
+}
+    
+    
+.main_path a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #333333;
+}
+.main_path div img {
+    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+   
+}
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 32px;
+    color: #333333;
+}
+.main_topics {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 8px;
+    align-items: flex-start;
+    width: 1181px;
+}
+.main_topics_button, 
+.card_tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 6px 8px;
+  border-radius: 24px;
+  border: 1px solid #c1c5cd;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+    
+.main_topics_button:hover {
+  background-color: transparent;
+  border: 2px solid #16c8bb;
+  cursor: pointer;
+}
+
+.main_bg {
+        width: 100%;
+        height: 672px;
+        position: absolute;
+        margin-top: 130px;
+        right: 0.01%;
+        z-index: -1;
+        background-image: url(../img/main/main-carts-bg.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
+.main_cards_grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+  padding-bottom: 96px;
+}
+
+.card {
+  position: relative;
+  grid-column: span 4;
+  min-height: 475px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(41, 99, 163, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(41, 99, 163, 0.12);
+}
+
+.card--featured {
+  grid-column: span 6;
+  min-height: 499px;
+}
+
+
+.card_image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card--featured .card_image {
+  height: 260px;
+}
+
+.card_tags {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: calc(100% - 16px);
+}
+
+.card_body {
+  flex-grow: 1;
+  padding: 16px 16px 10px;
+}
+
+.card_title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333333;
+}
+.card_title a {
+  color: #333333;
+}
+.card_author {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #494949;
+}
+
+.card_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+}
+
+.card_date {
+  display: block;
+  padding: 0 16px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #868686;
+}
